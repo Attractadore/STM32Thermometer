@@ -12,8 +12,7 @@ The aim of this project is to create a microcontroller powered digital thermomet
 * 9V battery
 
 ## Wiring diagram
-
-TODO
+![alt text](diagram.png "Wiring diagram")
 
 ## Principals of operation
 
@@ -28,7 +27,7 @@ The most complex part of the project was interfacing with the display module. Ei
 
 The LCD's contrast can be regulated using the V0 pin. I didn't buy a potentiometer for this, which posed some problems. And when V0 was connected to ground or 3.3V, the display contents were illegible. In the end, I used a hard-coded PWM signal from the microcontroller, which worked nicely.
 
-### Thermistor and temperature calculation.
+### Thermistor and temperature calculation
 Thermistors are elements whose resistance varies greatly with temperature. An NTC thermistor's resistance becomes lower as its temperature rises.
 
 The thermistor together with the resistor are connected in series to the 5V source. To minimises errors causes by Joule's law, both of them must have a high resistance.
